@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Article Generator</title>
+</head>
+<body>
+    <h1>Article Generator</h1>
+    <form method="post">
+        <label for="headings">Enter Headings (comma-separated):</label><br>
+        <textarea id="headings" name="headings" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Generate Article">
+    </form>
+    {% if article %}
+  <div id="generated-article">
+    {{ article|safe }}
+  </div>
+{% endif %}
+
+</body>
+</html>
