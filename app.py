@@ -10,7 +10,7 @@ def home():
         headings = request.form.get('headings')
         
         # Replace with your OpenAI API key
-        openai_api_key = "YOUR_OPENAI_API_KEY_HERE"
+        openai_api_key = "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"
         openai.api_key = openai_api_key
         
         # Your article generation code here
